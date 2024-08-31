@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre el título y los enlaces */
+    align-items: center; /* Alinear verticalmente */
+    padding: 10px; /* Espaciado interno */
+    background-color:cadetblue; /* Color de fondo del nav */
+}
+
+
+a {
+    color: black;
+    font-family: Arial;
+    margin: 10px;
+}
+
+.content {
+    flex: 1; /* Esto permite que el contenido ocupe el espacio disponible */
+    padding: 20px;
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+}
+
+.footer {
+    background-color:cadetblue;
+    color:darkslategrey;
+    text-align: center;
+    padding: 10px 0;
+    
+}
