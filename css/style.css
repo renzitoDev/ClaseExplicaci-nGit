@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: cursive;
 }
 
 header{
@@ -16,28 +17,67 @@ body {
 }
 
 nav {
-    display: flex; /* Usar flexbox para el layout */
+    display: flex; 
     justify-content: space-between; /* Espacio entre el título y los enlaces */
-    align-items: center; /* Alinear verticalmente */
-    padding: 10px; /* Espaciado interno */
-    background-color:cadetblue; /* Color de fondo del nav */
+    align-items: center; 
+    padding: 10px; 
+    background-color:cadetblue; 
 }
 
 
 a {
     color: black;
-    font-family: Arial;
+    font-family: cursive;
     margin: 10px;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+a:hover{
+    color: blue;
+    transform: scale(1.2);
+    font-family:monospace;
+}
+
+.imagen{
+    text-align: center;
+    margin: 10px;
+}
+
+.imagen img{
+    max-width: 100%;
+    height: 420px;
+}
+
+div cite{
+    display: block;
 }
 
 .content {
     flex: 1; /* Esto permite que el contenido ocupe el espacio disponible */
     padding: 20px;
+    background-color:aquamarine;
+}
+
+p{
+    text-align: justify;
+    line-height: normal;
+}
+
+.galery{
+    display:inline;
+    background-color: lightgrey;
 }
 
 img{
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
+    height: 340px;
+    margin:0 auto;
+    border-radius: 8px;
+}
+
+img:hover{
+    transform: scale(1.2);
 }
 
 .footer {
@@ -47,3 +87,4 @@ img{
     padding: 10px 0;
     
 }
+
